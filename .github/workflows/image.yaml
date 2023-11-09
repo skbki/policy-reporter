@@ -49,12 +49,12 @@ jobs:
         id: push
         with:
           push: true
-          platforms: linux/arm64,linux/amd64,linux/s390x
+          platforms: linux/amd64
           cache-from: type=registry,ref=ghcr.io/kyverno/policy-reporter:buildcache
-          cache-to: type=registry,ref=ghcr.io/kyverno/policy-reporter:buildcache,mode=max
+          cache-to: type=registry,ref=ghcr.io/skbki/policy-reporter:buildcache,mode=max
           tags: |
-            ghcr.io/kyverno/policy-reporter:latest
-            ghcr.io/kyverno/policy-reporter:${{ steps.params.outputs.version }}
+            ghcr.io/skbki/policy-reporter:latest
+            ghcr.io/skbki/policy-reporter:${{ steps.params.outputs.version }}
 
       - uses: CycloneDX/gh-gomod-generate-sbom@d4aee0cf5133055dbd98899978246c10c18c440f # v1.1.0
         with:
@@ -81,10 +81,10 @@ jobs:
             -a "repo=${{ github.repository }}" \
             -a "workflow=${{ github.workflow }}" \
             -a "ref=${{ github.sha }}" \
-            ghcr.io/kyverno/policy-reporter@${{ steps.push.outputs.digest }}
+            ghcr.io/skbki/policy-reporter@${{ steps.push.outputs.digest }}
       
       - shell: bash
         env:
           COSIGN_REPOSITORY: ghcr.io/kyverno/sbom
         run: |
-          cosign attach sbom --sbom ./policy-reporter-bom.cdx.json --type cyclonedx ghcr.io/kyverno/policy-reporter@${{ steps.push.outputs.digest }}
+          cosign attach sbom --sbom ./policy-reporter-bom.cdx.json --type cyclonedx ghcr.io/skbki/policy-reporter@${{ steps.push.outputs.digest }}
