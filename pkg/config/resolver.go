@@ -303,6 +303,7 @@ func (r *Resolver) TargetClients() []target.Client {
 	clients = append(clients, factory.KinesisClients(r.config.Kinesis)...)
 	clients = append(clients, factory.SecurityHubs(r.config.SecurityHub)...)
 	clients = append(clients, factory.WebhookClients(r.config.Webhook)...)
+	clients = append(clients, factory.JiraClients(r.config.Jira)...)
 	clients = append(clients, factory.GCSClients(r.config.GCS)...)
 	clients = append(clients, factory.TelegramClients(r.config.Telegram)...)
 	clients = append(clients, factory.GoogleChatClients(r.config.GoogleChat)...)
