@@ -1,8 +1,8 @@
 package report
 
 import (
-	"github.com/kyverno/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
-	"github.com/kyverno/policy-reporter/pkg/validate"
+	"github.com/skbki/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
+	"github.com/skbki/policy-reporter/pkg/validate"
 )
 
 type Namespaced interface {

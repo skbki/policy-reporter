@@ -1,7 +1,7 @@
 package v1alpha2
 
 import (
-	"github.com/kyverno/policy-reporter/pkg/helper"
+	"github.com/skbki/policy-reporter/pkg/helper"
 )
 
 func Extract(polr ReportInterface, cb func(res PolicyReportResult) string) []string {

@@ -9,8 +9,8 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/securityhub/types"
 	"go.uber.org/zap"
 
-	"github.com/kyverno/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
-	"github.com/kyverno/policy-reporter/pkg/target"
+	"github.com/skbki/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
+	"github.com/skbki/policy-reporter/pkg/target"
 )
 
 // Options to configure the S3 target

@@ -5,9 +5,9 @@ import (
 	"encoding/json"
 	"testing"
 
-	"github.com/kyverno/policy-reporter/pkg/fixtures"
-	"github.com/kyverno/policy-reporter/pkg/target"
-	"github.com/kyverno/policy-reporter/pkg/target/s3"
+	"github.com/skbki/policy-reporter/pkg/fixtures"
+	"github.com/skbki/policy-reporter/pkg/target"
+	"github.com/skbki/policy-reporter/pkg/target/s3"
 )
 
 type testClient struct {

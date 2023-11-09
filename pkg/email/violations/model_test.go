@@ -3,7 +3,7 @@ package violations_test
 import (
 	"testing"
 
-	"github.com/kyverno/policy-reporter/pkg/email/violations"
+	"github.com/skbki/policy-reporter/pkg/email/violations"
 )
 
 func Test_Source(t *testing.T) {

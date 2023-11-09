@@ -7,9 +7,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kyverno/policy-reporter/pkg/fixtures"
-	"github.com/kyverno/policy-reporter/pkg/target"
-	"github.com/kyverno/policy-reporter/pkg/target/loki"
+	"github.com/skbki/policy-reporter/pkg/fixtures"
+	"github.com/skbki/policy-reporter/pkg/target"
+	"github.com/skbki/policy-reporter/pkg/target/loki"
 )
 
 type testClient struct {

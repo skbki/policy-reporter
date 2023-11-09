@@ -4,8 +4,8 @@ import (
 	"context"
 	"testing"
 
-	"github.com/kyverno/policy-reporter/pkg/listener"
-	"github.com/kyverno/policy-reporter/pkg/report"
+	"github.com/skbki/policy-reporter/pkg/listener"
+	"github.com/skbki/policy-reporter/pkg/report"
 )
 
 var ctx = context.Background()

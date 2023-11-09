@@ -11,8 +11,8 @@ import (
 	"k8s.io/client-go/metadata/metadatainformer"
 	"k8s.io/client-go/tools/cache"
 
-	pr "github.com/kyverno/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
-	"github.com/kyverno/policy-reporter/pkg/report"
+	pr "github.com/skbki/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
+	"github.com/skbki/policy-reporter/pkg/report"
 )
 
 var (

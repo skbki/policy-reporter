@@ -8,9 +8,9 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/kyverno/policy-reporter/pkg/api"
-	v1 "github.com/kyverno/policy-reporter/pkg/api/v1"
-	"github.com/kyverno/policy-reporter/pkg/target"
+	"github.com/skbki/policy-reporter/pkg/api"
+	v1 "github.com/skbki/policy-reporter/pkg/api/v1"
+	"github.com/skbki/policy-reporter/pkg/target"
 )
 
 func Test_GzipCompression(t *testing.T) {

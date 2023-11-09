@@ -4,10 +4,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kyverno/policy-reporter/pkg/cache"
-	"github.com/kyverno/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
-	"github.com/kyverno/policy-reporter/pkg/helper"
-	"github.com/kyverno/policy-reporter/pkg/report"
+	"github.com/skbki/policy-reporter/pkg/cache"
+	"github.com/skbki/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
+	"github.com/skbki/policy-reporter/pkg/helper"
+	"github.com/skbki/policy-reporter/pkg/report"
 )
 
 const NewResults = "new_results_listener"

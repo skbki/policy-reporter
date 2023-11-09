@@ -11,9 +11,9 @@ import (
 	"k8s.io/client-go/rest"
 	"k8s.io/client-go/tools/clientcmd"
 
-	"github.com/kyverno/policy-reporter/pkg/config"
-	"github.com/kyverno/policy-reporter/pkg/database"
-	"github.com/kyverno/policy-reporter/pkg/listener"
+	"github.com/skbki/policy-reporter/pkg/config"
+	"github.com/skbki/policy-reporter/pkg/database"
+	"github.com/skbki/policy-reporter/pkg/listener"
 )
 
 func newRunCMD(version string) *cobra.Command {

@@ -10,8 +10,8 @@ import (
 	"go.uber.org/zap"
 	"go.uber.org/zap/zapcore"
 
-	v1 "github.com/kyverno/policy-reporter/pkg/api/v1"
-	"github.com/kyverno/policy-reporter/pkg/target"
+	v1 "github.com/skbki/policy-reporter/pkg/api/v1"
+	"github.com/skbki/policy-reporter/pkg/target"
 )
 
 // Server for the Lifecycle and optional HTTP REST API

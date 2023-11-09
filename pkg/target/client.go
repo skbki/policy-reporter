@@ -5,10 +5,10 @@ import (
 
 	"github.com/kyverno/go-wildcard"
 
-	"github.com/kyverno/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
-	"github.com/kyverno/policy-reporter/pkg/helper"
-	"github.com/kyverno/policy-reporter/pkg/report"
-	"github.com/kyverno/policy-reporter/pkg/validate"
+	"github.com/skbki/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
+	"github.com/skbki/policy-reporter/pkg/helper"
+	"github.com/skbki/policy-reporter/pkg/report"
+	"github.com/skbki/policy-reporter/pkg/validate"
 )
 
 // Client for a provided Target

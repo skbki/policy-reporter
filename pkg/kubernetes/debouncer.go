@@ -4,7 +4,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/kyverno/policy-reporter/pkg/report"
+	"github.com/skbki/policy-reporter/pkg/report"
 )
 
 type Debouncer interface {

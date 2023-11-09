@@ -3,10 +3,10 @@ package metrics_test
 import (
 	"testing"
 
-	"github.com/kyverno/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
-	"github.com/kyverno/policy-reporter/pkg/fixtures"
-	"github.com/kyverno/policy-reporter/pkg/listener/metrics"
-	"github.com/kyverno/policy-reporter/pkg/validate"
+	"github.com/skbki/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
+	"github.com/skbki/policy-reporter/pkg/fixtures"
+	"github.com/skbki/policy-reporter/pkg/listener/metrics"
+	"github.com/skbki/policy-reporter/pkg/validate"
 )
 
 func Test_Vaildate(t *testing.T) {

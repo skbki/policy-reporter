@@ -5,7 +5,7 @@ import (
 
 	gocache "github.com/patrickmn/go-cache"
 
-	"github.com/kyverno/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
+	"github.com/skbki/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
 )
 
 type inMemoryCache struct {

@@ -3,8 +3,8 @@ package metrics_test
 import (
 	"testing"
 
-	"github.com/kyverno/policy-reporter/pkg/fixtures"
-	"github.com/kyverno/policy-reporter/pkg/listener/metrics"
+	"github.com/skbki/policy-reporter/pkg/fixtures"
+	"github.com/skbki/policy-reporter/pkg/listener/metrics"
 )
 
 func Test_LabelMappings(t *testing.T) {

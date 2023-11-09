@@ -3,8 +3,8 @@ package listener
 import (
 	"strings"
 
-	"github.com/kyverno/policy-reporter/pkg/listener/metrics"
-	"github.com/kyverno/policy-reporter/pkg/report"
+	"github.com/skbki/policy-reporter/pkg/listener/metrics"
+	"github.com/skbki/policy-reporter/pkg/report"
 )
 
 var (

@@ -3,7 +3,7 @@ package validate_test
 import (
 	"testing"
 
-	"github.com/kyverno/policy-reporter/pkg/validate"
+	"github.com/skbki/policy-reporter/pkg/validate"
 )
 
 func Test_Validations(t *testing.T) {

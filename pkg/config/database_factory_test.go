@@ -5,8 +5,8 @@ import (
 
 	"github.com/uptrace/bun/dialect"
 
-	"github.com/kyverno/policy-reporter/pkg/config"
-	"github.com/kyverno/policy-reporter/pkg/kubernetes/secrets"
+	"github.com/skbki/policy-reporter/pkg/config"
+	"github.com/skbki/policy-reporter/pkg/kubernetes/secrets"
 )
 
 func Test_ResolveDatabase(t *testing.T) {

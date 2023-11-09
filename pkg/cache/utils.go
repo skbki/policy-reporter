@@ -1,7 +1,7 @@
 package cache
 
 import (
-	"github.com/kyverno/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
+	"github.com/skbki/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
 )
 
 func reportResultsIds(report v1alpha2.ReportInterface) []string {

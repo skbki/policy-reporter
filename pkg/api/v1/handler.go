@@ -7,8 +7,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/kyverno/policy-reporter/pkg/helper"
-	"github.com/kyverno/policy-reporter/pkg/target"
+	"github.com/skbki/policy-reporter/pkg/helper"
+	"github.com/skbki/policy-reporter/pkg/target"
 )
 
 var defaultOrder = []string{"resource_namespace", "resource_name", "resource_uid", "policy", "rule", "message"}

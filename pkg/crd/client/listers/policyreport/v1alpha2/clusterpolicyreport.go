@@ -23,7 +23,7 @@ import (
 	"k8s.io/apimachinery/pkg/labels"
 	"k8s.io/client-go/tools/cache"
 
-	v1alpha2 "github.com/kyverno/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
+	v1alpha2 "github.com/skbki/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
 )
 
 // ClusterPolicyReportLister helps list ClusterPolicyReports.

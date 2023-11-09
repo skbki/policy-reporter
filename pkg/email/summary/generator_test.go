@@ -6,10 +6,10 @@ import (
 
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/kyverno/policy-reporter/pkg/email"
-	"github.com/kyverno/policy-reporter/pkg/email/summary"
-	"github.com/kyverno/policy-reporter/pkg/fixtures"
-	"github.com/kyverno/policy-reporter/pkg/validate"
+	"github.com/skbki/policy-reporter/pkg/email"
+	"github.com/skbki/policy-reporter/pkg/email/summary"
+	"github.com/skbki/policy-reporter/pkg/fixtures"
+	"github.com/skbki/policy-reporter/pkg/validate"
 )
 
 func Test_GenerateDataWithSingleSource(t *testing.T) {

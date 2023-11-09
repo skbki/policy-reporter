@@ -1,6 +1,6 @@
 package config
 
-import "github.com/kyverno/policy-reporter/pkg/target"
+import "github.com/skbki/policy-reporter/pkg/target"
 
 type ValueFilter struct {
 	Include []string `mapstructure:"include"`

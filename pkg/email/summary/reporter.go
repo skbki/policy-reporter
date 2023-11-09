@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"github.com/kyverno/policy-reporter/pkg/email"
+	"github.com/skbki/policy-reporter/pkg/email"
 )
 
 type Reporter struct {

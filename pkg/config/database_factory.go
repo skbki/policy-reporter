@@ -16,8 +16,8 @@ import (
 	"github.com/uptrace/bun/driver/pgdriver"
 	"go.uber.org/zap"
 
-	"github.com/kyverno/policy-reporter/pkg/database"
-	"github.com/kyverno/policy-reporter/pkg/kubernetes/secrets"
+	"github.com/skbki/policy-reporter/pkg/database"
+	"github.com/skbki/policy-reporter/pkg/kubernetes/secrets"
 )
 
 var ErrNoConfig = errors.New("no configuration for the provider found")

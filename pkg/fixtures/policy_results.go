@@ -3,7 +3,7 @@ package fixtures
 import (
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/kyverno/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
+	"github.com/skbki/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
 )
 
 var PassResult = v1alpha2.PolicyReportResult{

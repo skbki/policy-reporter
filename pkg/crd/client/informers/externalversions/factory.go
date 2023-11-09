@@ -28,9 +28,9 @@ import (
 	schema "k8s.io/apimachinery/pkg/runtime/schema"
 	cache "k8s.io/client-go/tools/cache"
 
-	versioned "github.com/kyverno/policy-reporter/pkg/crd/client/clientset/versioned"
-	internalinterfaces "github.com/kyverno/policy-reporter/pkg/crd/client/informers/externalversions/internalinterfaces"
-	policyreport "github.com/kyverno/policy-reporter/pkg/crd/client/informers/externalversions/policyreport"
+	versioned "github.com/skbki/policy-reporter/pkg/crd/client/clientset/versioned"
+	internalinterfaces "github.com/skbki/policy-reporter/pkg/crd/client/informers/externalversions/internalinterfaces"
+	policyreport "github.com/skbki/policy-reporter/pkg/crd/client/informers/externalversions/policyreport"
 )
 
 // SharedInformerOption defines the functional option type for SharedInformerFactory.

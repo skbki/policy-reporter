@@ -5,7 +5,7 @@ import (
 
 	mail "github.com/xhit/go-simple-mail/v2"
 
-	"github.com/kyverno/policy-reporter/pkg/email"
+	"github.com/skbki/policy-reporter/pkg/email"
 )
 
 func Test_EncryptionFromString(t *testing.T) {

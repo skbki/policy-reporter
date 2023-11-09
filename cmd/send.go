@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/kyverno/policy-reporter/cmd/send"
+	"github.com/skbki/policy-reporter/cmd/send"
 )
 
 func newSendCMD() *cobra.Command {

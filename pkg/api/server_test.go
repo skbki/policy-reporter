@@ -10,8 +10,8 @@ import (
 
 	"go.uber.org/zap"
 
-	"github.com/kyverno/policy-reporter/pkg/api"
-	"github.com/kyverno/policy-reporter/pkg/target"
+	"github.com/skbki/policy-reporter/pkg/api"
+	"github.com/skbki/policy-reporter/pkg/target"
 )
 
 var logger = zap.NewNop()

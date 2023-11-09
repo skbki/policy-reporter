@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kyverno/policy-reporter/pkg/fixtures"
-	"github.com/kyverno/policy-reporter/pkg/target"
-	"github.com/kyverno/policy-reporter/pkg/target/elasticsearch"
+	"github.com/skbki/policy-reporter/pkg/fixtures"
+	"github.com/skbki/policy-reporter/pkg/target"
+	"github.com/skbki/policy-reporter/pkg/target/elasticsearch"
 )
 
 type testClient struct {

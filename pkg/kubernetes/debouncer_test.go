@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/kyverno/policy-reporter/pkg/fixtures"
-	"github.com/kyverno/policy-reporter/pkg/kubernetes"
-	"github.com/kyverno/policy-reporter/pkg/report"
+	"github.com/skbki/policy-reporter/pkg/fixtures"
+	"github.com/skbki/policy-reporter/pkg/kubernetes"
+	"github.com/skbki/policy-reporter/pkg/report"
 )
 
 func Test_Debouncer(t *testing.T) {

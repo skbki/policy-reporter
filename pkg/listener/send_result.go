@@ -5,9 +5,9 @@ import (
 
 	corev1 "k8s.io/api/core/v1"
 
-	"github.com/kyverno/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
-	"github.com/kyverno/policy-reporter/pkg/report"
-	"github.com/kyverno/policy-reporter/pkg/target"
+	"github.com/skbki/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
+	"github.com/skbki/policy-reporter/pkg/report"
+	"github.com/skbki/policy-reporter/pkg/target"
 )
 
 const SendResults = "send_results_listener"

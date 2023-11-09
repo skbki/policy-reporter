@@ -21,7 +21,7 @@ import (
 	"k8s.io/apimachinery/pkg/runtime"
 	"k8s.io/apimachinery/pkg/runtime/schema"
 
-	"github.com/kyverno/policy-reporter/pkg/crd/api/policyreport"
+	"github.com/skbki/policy-reporter/pkg/crd/api/policyreport"
 )
 
 // SchemeGroupVersion is group version used to register these objects

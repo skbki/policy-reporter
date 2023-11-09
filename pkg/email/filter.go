@@ -1,7 +1,7 @@
 package email
 
 import (
-	"github.com/kyverno/policy-reporter/pkg/validate"
+	"github.com/skbki/policy-reporter/pkg/validate"
 )
 
 type Filter struct {

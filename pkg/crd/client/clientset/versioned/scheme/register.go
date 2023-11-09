@@ -25,7 +25,7 @@ import (
 	serializer "k8s.io/apimachinery/pkg/runtime/serializer"
 	utilruntime "k8s.io/apimachinery/pkg/util/runtime"
 
-	wgpolicyk8sv1alpha2 "github.com/kyverno/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
+	wgpolicyk8sv1alpha2 "github.com/skbki/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
 )
 
 var Scheme = runtime.NewScheme()

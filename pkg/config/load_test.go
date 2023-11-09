@@ -5,7 +5,7 @@ import (
 
 	"github.com/spf13/cobra"
 
-	"github.com/kyverno/policy-reporter/pkg/config"
+	"github.com/skbki/policy-reporter/pkg/config"
 )
 
 func createCMD() *cobra.Command {

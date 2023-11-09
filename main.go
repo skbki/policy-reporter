@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/kyverno/policy-reporter/cmd"
+	"github.com/skbki/policy-reporter/cmd"
 )
 
 var Version = "development"

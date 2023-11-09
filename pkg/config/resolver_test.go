@@ -6,9 +6,9 @@ import (
 
 	"k8s.io/client-go/rest"
 
-	"github.com/kyverno/policy-reporter/pkg/config"
-	"github.com/kyverno/policy-reporter/pkg/database"
-	"github.com/kyverno/policy-reporter/pkg/report"
+	"github.com/skbki/policy-reporter/pkg/config"
+	"github.com/skbki/policy-reporter/pkg/database"
+	"github.com/skbki/policy-reporter/pkg/report"
 )
 
 var testConfig = &config.Config{

@@ -3,8 +3,8 @@ package email_test
 import (
 	"testing"
 
-	"github.com/kyverno/policy-reporter/pkg/email"
-	"github.com/kyverno/policy-reporter/pkg/validate"
+	"github.com/skbki/policy-reporter/pkg/email"
+	"github.com/skbki/policy-reporter/pkg/validate"
 )
 
 func Test_Filters(t *testing.T) {

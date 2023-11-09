@@ -5,7 +5,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/kyverno/policy-reporter/pkg/api"
+	"github.com/skbki/policy-reporter/pkg/api"
 )
 
 func Test_HTTPBasicSkipped(t *testing.T) {

@@ -6,10 +6,10 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	v1 "k8s.io/apimachinery/pkg/apis/meta/v1"
 
-	"github.com/kyverno/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
-	"github.com/kyverno/policy-reporter/pkg/listener/metrics"
-	"github.com/kyverno/policy-reporter/pkg/report"
-	"github.com/kyverno/policy-reporter/pkg/validate"
+	"github.com/skbki/policy-reporter/pkg/crd/api/policyreport/v1alpha2"
+	"github.com/skbki/policy-reporter/pkg/listener/metrics"
+	"github.com/skbki/policy-reporter/pkg/report"
+	"github.com/skbki/policy-reporter/pkg/validate"
 )
 
 func Test_PolicyReportMetricGeneration(t *testing.T) {

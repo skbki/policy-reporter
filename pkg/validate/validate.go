@@ -3,7 +3,7 @@ package validate
 import (
 	"github.com/kyverno/go-wildcard"
 
-	"github.com/kyverno/policy-reporter/pkg/helper"
+	"github.com/skbki/policy-reporter/pkg/helper"
 )
 
 func Namespace(namespace string, namespaces RuleSets) bool {

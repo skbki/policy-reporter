@@ -3,7 +3,7 @@ package config_test
 import (
 	"testing"
 
-	"github.com/kyverno/policy-reporter/pkg/config"
+	"github.com/skbki/policy-reporter/pkg/config"
 )
 
 func Test_ReadinessProbe(t *testing.T) {
