@@ -153,6 +153,16 @@ type Webhook struct {
 	Channels          []*Webhook        `mapstructure:"channels"`
 }
 
+// Jira configuration
+type Jira struct {
+	TargetBaseOptions `mapstructure:",squash"`
+	Host              string            `mapstructure:"host"`
+	SkipTLS           bool              `mapstructure:"skipTLS"`
+	Certificate       string            `mapstructure:"certificate"`
+	Headers           map[string]string `mapstructure:"headers"`
+	Channels          []*Jira           `mapstructure:"channels"`
+}
+
 // Telegram configuration
 type Telegram struct {
 	TargetBaseOptions `mapstructure:",squash"`
@@ -355,6 +365,7 @@ type Config struct {
 	GCS            *GCS           `mapstructure:"gcs"`
 	UI             *UI            `mapstructure:"ui"`
 	Webhook        *Webhook       `mapstructure:"webhook"`
+	Jira           *Jira          `mapstructure:"jira"`
 	Telegram       *Telegram      `mapstructure:"telegram"`
 	GoogleChat     *GoogleChat    `mapstructure:"googleChat"`
 	API            API            `mapstructure:"api"`

@@ -101,6 +101,24 @@ var testConfig = &config.Config{
 			},
 		}},
 	},
+	Jira: &config.Jira{
+		Host: "http://localhost:8080",
+		Headers: map[string]string{
+			"X-Custom": "Header",
+		},
+		TargetBaseOptions: config.TargetBaseOptions{
+			SkipExisting:    true,
+			MinimumPriority: "debug",
+			CustomFields:    map[string]string{"field": "value"},
+		},
+		SkipTLS: true,
+		Channels: []*config.Jira{{
+			Host: "http://localhost:8081",
+			Headers: map[string]string{
+				"X-Custom-2": "Header",
+			},
+		}},
+	},
 	S3: &config.S3{
 		TargetBaseOptions: config.TargetBaseOptions{
 			SkipExisting:    true,

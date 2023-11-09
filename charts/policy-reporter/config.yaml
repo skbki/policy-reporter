@@ -150,6 +150,31 @@ webhook:
     {{- toYaml . | nindent 4 }}
   {{- end }}
 
+jira:
+  host: {{ .Values.target.jira.host | quote }}
+  certificate: {{ .Values.target.jira.certificate | quote }}
+  skipTLS: {{ .Values.target.jira.skipTLS }}
+  secretRef: {{ .Values.target.jira.secretRef | quote }}
+  mountedSecret: {{ .Values.target.jira.mountedSecret | quote }}
+  minimumPriority: {{ .Values.target.jira.minimumPriority | quote }}
+  skipExistingOnStartup: {{ .Values.target.jira.skipExistingOnStartup }}
+  {{- with .Values.target.jira.sources }}
+  sources:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+  {{- with .Values.target.jira.customFields }}
+  customFields:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+  {{- with .Values.target.jira.filter }}
+  filter:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+  {{- with .Values.target.jira.channels }}
+  channels:
+    {{- toYaml . | nindent 4 }}
+  {{- end }}
+
 telegram:
   token: {{ .Values.target.telegram.token | quote }}
   chatID: {{ .Values.target.telegram.chatID | quote }}

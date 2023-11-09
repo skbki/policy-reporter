@@ -19,6 +19,7 @@ import (
 	"github.com/kyverno/policy-reporter/pkg/target/gcs"
 	"github.com/kyverno/policy-reporter/pkg/target/googlechat"
 	"github.com/kyverno/policy-reporter/pkg/target/http"
+	"github.com/kyverno/policy-reporter/pkg/target/jira"
 	"github.com/kyverno/policy-reporter/pkg/target/kinesis"
 	"github.com/kyverno/policy-reporter/pkg/target/loki"
 	"github.com/kyverno/policy-reporter/pkg/target/s3"
@@ -174,6 +175,30 @@ func (f *TargetFactory) WebhookClients(config *Webhook) []target.Client {
 
 	return clients
 }
+
+// JiraClients resolver method
+func (f *TargetFactory) JiraClients(config *Jira) []target.Client {
+	clients := make([]target.Client, 0)
+	if config == nil {
+		return clients
+	}
+
+	setFallback(&config.Name, "Jira")
+
+	if es := f.createJiraClient(config, &Jira{}); es != nil {
+		clients = append(clients, es)
+	}
+	for i, channel := range config.Channels {
+		setFallback(&config.Name, fmt.Sprintf("Jira Channel %d", i+1))
+
+		if es := f.createJiraClient(channel, config); es != nil {
+			clients = append(clients, es)
+		}
+	}
+
+	return clients
+}
+
 
 // UIClient resolver method
 func (f *TargetFactory) UIClient(config *UI) target.Client {
@@ -500,6 +525,42 @@ func (f *TargetFactory) createWebhookClient(config, parent *Webhook) target.Clie
 	zap.S().Infof("%s configured", config.Name)
 
 	return webhook.NewClient(webhook.Options{
+		ClientOptions: config.ClientOptions(),
+		Host:          config.Host,
+		Headers:       config.Headers,
+		CustomFields:  config.CustomFields,
+		HTTPClient:    http.NewClient(config.Certificate, config.SkipTLS),
+	})
+}
+
+func (f *TargetFactory) createJiraClient(config, parent *Jira) target.Client {
+	if (config.SecretRef != "" && f.secretClient != nil) || config.MountedSecret != "" {
+		f.mapSecretValues(config, config.SecretRef, config.MountedSecret)
+	}
+
+	if config.Host == "" {
+		return nil
+	}
+
+	setFallback(&config.Certificate, parent.Certificate)
+	setBool(&config.SkipTLS, parent.SkipTLS)
+	config.MapBaseParent(parent.TargetBaseOptions)
+
+	if len(parent.Headers) > 0 {
+		headers := map[string]string{}
+		for header, value := range parent.Headers {
+			headers[header] = value
+		}
+		for header, value := range config.Headers {
+			headers[header] = value
+		}
+
+		config.Headers = headers
+	}
+
+	zap.S().Infof("%s configured", config.Name)
+
+	return jira.NewClient(jira.Options{
 		ClientOptions: config.ClientOptions(),
 		Host:          config.Host,
 		Headers:       config.Headers,
